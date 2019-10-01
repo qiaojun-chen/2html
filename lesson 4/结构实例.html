@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构实例</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 500px;
+            border: 10px solid #cccccc;
+        }
+        .box1{
+            width: 200px;
+            height: 400px;
+            background: #77aa11;
+            float: left;
+        }
+        .box2{
+            width: 300px;
+            float: left;
+        }
+        .up{
+            height: 80px;
+            background: #ff9900;
+        }
+        .mid{
+            height: 160px;
+        }
+        .mid-L{
+            height: 160px;
+            width: 150px;
+            background: #ff6699;
+            float: left;
+        }
+        .mid-R{
+            height: 160px;
+            width: 150px;
+            background: #44ffcc;
+            float: left;
+        }
+        .bot{
+            width: 300px;
+            height: 160px;
+            background: #336699;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1"></div>
+    <div class="box2">
+        <div class="up"></div>
+        <div class="mid clear">
+            <div class="mid-L"></div>
+            <div class="mid-R"></div>
+        </div>
+        <div class="bot"></div>
+    </div>
+</div>
+</body>
+</html>

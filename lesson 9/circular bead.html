@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圆角</title>
+    <style>
+        body{background: black}
+        .box{width: 200px;}/* 宽度可更改 */
+        .boxhead{background: url("img2/boxH.png");overflow: hidden}
+        /* 9px是boxhead的，由于三层嵌套所以放在最里面的div,overflow: hiddenq清除IE6下最小高度问题 */
+        .headL{background: url("img2/boxHL.png")no-repeat;}
+        .headR{background: url("img2/boxHR.png")no-repeat right 0;height: 9px}/* 高度需要刚刚好是中间平铺部分的高度*/
+
+        .boxfoot{background: url("img2/boxF.png");overflow: hidden;}
+        .footL{background: url("img2/boxFL.png")no-repeat}
+        .footR{background: url("img2/boxFR.png")no-repeat right 0;height: 9px}
+
+        .boxcon{height: 30px;border-left: 1px solid #e5e5e5;border-right: 1px solid #e5e5e5}/* 高度可更改 */
+    </style>
+</head>
+<body>
+<div class="box">
+<div class="boxhead">
+    <div class="headL">
+        <div class="headR"></div>
+    </div>
+</div>
+<div class="boxcon">
+dddddddd
+</div>
+<div class="boxfoot">
+    <div class="footL">
+        <div class="footR"></div>
+    </div>
+</div>
+</div>
+</body>
+</html>

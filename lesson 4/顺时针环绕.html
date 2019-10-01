@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>顺时针环绕</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 30px auto;
+        }
+        .left{
+            width: 300px;
+            height: 400px;
+            float: left;
+        }
+        .up{
+            width:296px;
+            height: 296px;
+            background: #ff00ff;
+            margin: 2px;
+        }
+        .bot{
+            width: 300px;
+            height: 100px;
+        }
+        .bot1{
+            width:100px;
+            height: 100px;
+            background: #77cc11;
+            float: left;
+        }
+        .bot2{
+            width:100px;
+            height: 100px;
+            background: #ffff00;
+            float: left;
+        }
+        .L1{
+            width:100px;
+            height: 100px;
+            background: #77cc11;
+        }
+        .L2{
+            width:100px;
+            height: 100px;
+            background: #ffff00;
+        }
+        .right{
+            height: 500px;
+            width: 100px;
+            /*height: 400px;*/
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="box">
+        <div class="left">
+            <div class="up"></div>
+            <div class="bot clear">
+                <div class="bot1"></div>
+                <div class="bot2"></div>
+                <div class="bot1"></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="L1"></div>
+            <div class="L2"></div>
+            <div class="L1"></div>
+            <div class="L2"></div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>今日头条</title>
+    <link rel="stylesheet" href="clear defult sytle.css">
+    <style>
+
+        .box{
+            width:750px;height: 461px;
+            border: 1px solid darkgoldenrod;
+            padding-left: 10px ;
+            margin: 30px auto;
+            position: relative;
+        }
+        .header{
+            background: #e8fafe;
+            width: 600px;height: 30px;
+            margin-top: 14px;
+        }
+        .header h1{
+            font: 14px/30px 宋体;
+            font-weight: bold;
+            padding-left: 10px;
+            float: left;
+        }
+        .header a{
+            font:12px/30px 宋体;
+            color: #676566;
+            word-spacing: 11px;
+            padding-right: 10px;
+            float: right;
+        }
+        .cont{
+            padding-top: 15px;
+
+        }
+        .left{
+            width: 290px;
+            float: left;
+        }
+        .media{
+            width: 290px;
+            height: 275px;
+        }
+        .media p{
+            font:bold 14px/30px 宋体 ;/* 斜体，加粗需要放在字体大小前面 */
+        }
+        .left ul{
+            padding-top: 6px;
+
+
+        }
+        .left li{
+            font: 12px/20px 宋体;
+        }
+        .right{
+            float: left;
+        }
+        .right li{
+            padding-left: 24px;
+            padding-bottom: 12px;
+        }
+        .right img{
+            margin-right: 29px;
+        }
+        .fixed {
+            border: 1px solid #909090;
+            background: #ffffff;
+            width: 278px;
+            height: 189px;
+            position: absolute;
+            right: 18px;
+            bottom: 13px;
+            display: none;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="header clear" >
+        <h1>今日头条</h1>
+        <a href="#">热点 深度 青春季</a>
+    </div>
+    <div>
+        <div class="cont">
+            <div class="left">
+                <div class="media">
+                    <img src="img/1.png" alt=" ">
+                    <p>实拍二炮跨区联合演习 千里机动发射导弹</p>
+                    <div class="clear">
+                        <img src="img/2.png" alt=" " style="float: left"><p style="float: left;font: 12px/14px 宋体;padding-left: 4px">安徽卫视</p>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#">[热点]中国将提交东海划界按 大陆架延申到冲绳海草</a></li>
+                    <li><a href="#">[热点]中国将提交东海划界按 大陆架延申到冲绳海草</a></li>
+                    <li><a href="#">[热点]中国将提交东海划界按 大陆架延申到冲绳海草</a></li>
+                    <li><a href="#">[热点]中国将提交东海划界按 大陆架延申到冲绳海草</a></li>
+                </ul>
+                <p>深度阅读：军演</p>
+            </div>
+            <ul class="right">
+                <li><a href="" id="show"><img src="img/3.png" alt=" "><img src="img/3.png" alt=" "></a></li>
+                <li><a href="" id="show1"><img src="img/3.png" alt=" "><img src="img/3.png" alt=" "></a></li>
+                <li><a href="" id="show2"><img src="img/3.png" alt=" "><img src="img/3.png" alt=" "></a></li>
+
+            </ul>
+        </div>
+
+    </div>
+    <div class="fixed" id="hid">
+        鼠标滑过第一排时显示，划出隐藏
+    </div>
+    <div style="position: absolute;right:11px;bottom:6px;width: 280px;height: 191px;display:none;background: #b7b7b7;opacity: 0.3" id="oLvjing"></div>
+</div>
+</body>
+</html>
+<script>
+    // alert('老万是狗')
+    let show = document.getElementById('show');/* 获取元素怒，为书写方便，将长长的一串定义为变量 */
+
+    show.onmouseover=showdiv;/* 事件调用，元素.事件=函数名 */
+
+    function showdiv() {/* 声明函数 */
+        document.getElementById('hid').style.display='block';
+        document.getElementById('oLvjing').style.display='block';
+
+    }
+
+    /* 下面是不设函数名，直接事件=函数，更加简写 相当于第123行和125行合并
+* show.onmouseout=function() {
+*       document.getElementById('hid').style.display='none';
+}
+* */
+    show.onmouseout=function () {
+        document.getElementById('hid').style.display='none';
+        document.getElementById('oLvjing').style.display='none';
+
+    }
+
+</script>

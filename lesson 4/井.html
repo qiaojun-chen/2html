@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>井</title>
+    <link rel="stylesheet" href="clear defult sytle.css">
+    <style>
+        .box{
+            width: 448px;
+            height: 448px;
+            margin: 30px auto;
+
+        }
+        .left{
+            height: 448px;
+            width: 148px;
+            border-right: 2px solid black;
+            float: left;
+        }
+        .left-u{
+            height: 148px;
+            width: 148px;
+            border-bottom: 2px solid black;
+        }
+        .left-d{
+            height: 148px;
+            width: 148px;
+            border-bottom: 2px solid black;
+        }
+        .mid{
+            height: 448px;
+            width: 148px;
+            border-right: 2px solid black;
+            float: left;
+        }
+        .right{
+            height: 448px;
+            width: 148px;
+            /*border-right: 2px solid black;*/
+            float: left;
+        }
+        .clear:after{content:"";display:block;clear:both;}
+
+    </style>
+</head>
+<body>
+<div class="box clear">
+    <div class="left">
+        <div class="left-u"></div>
+        <div class="left-d"></div>
+    </div>
+    <div class="mid">
+        <div class="left-u"></div>
+        <div class="left-d"></div>
+    </div>
+    <div class="right">
+        <div class="left-u"></div>
+        <div class="left-d"></div>
+    </div>
+</div>
+</body>
+</html>

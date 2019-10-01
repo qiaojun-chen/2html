@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习图3</title>
+    <link rel="stylesheet" href="clear defult sytle.css">
+    <style>
+        .box{
+            width: 376px;
+            height: 265px;
+            border: 1px solid chartreuse;
+            margin: 30px auto;
+        }
+        header{
+            background: #e3f2f6;
+            height: 36px;
+        }
+        .tit{
+            font: 12px/24px 楷体;
+            background: url("31.png") no-repeat 9px 17px;
+            padding-left: 33px;
+            padding-top: 12px;
+        }
+        .piclist{
+            padding-top: 16px;
+            /*padding-left: 8px;*/
+
+        }
+        .picli{
+            float: left;
+            width: 91px;
+            background: url("33.png") no-repeat 91px 18px;
+            padding-right:17px;margin:0 8px
+            /*padding-right: 33px;*/
+
+        }
+        .pic{
+            border: 1px solid #c8c4d3;
+            padding: 2px;
+            float: left;
+        }
+        strong{
+            display: block;
+            color: #333333;
+            font: 12px/22px 楷体;
+            padding-top: 4px;
+            text-align: center;
+        }
+        .textul{
+            padding:0 27px;
+        }
+        .textlli{
+            background: url("34.png") no-repeat 0 10px;
+            font:12px/24px 楷体;
+            color: #333333;
+            padding-left: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <header>
+        <h1 class="tit">华语谍报</h1>
+    </header>
+    <ul class="piclist clear">
+        <li class="picli">
+            <a href="#">
+                <img src="32.png" alt="00" class="pic">
+                <strong>大叔</strong>
+            </a>
+        </li>
+        <li class="picli"><!-- clear重要, -->
+            <a href="#">
+                <img src="32.png" alt="00" class="pic">
+                <strong>大叔</strong>
+            </a>
+        </li>
+        <li class="picli"><!-- clear重要, -->
+            <a href="#">
+                <img src="32.png" alt="00" class="pic">
+                <strong>十三刺客</strong>
+            </a>
+        </li>
+    </ul>
+    <ul class="textul">
+        <li class="textlli">化妆，还是伪装？港三区美呀版《最强喜事》</li>
+        <li class="textlli">化妆，还是伪装？港三区美呀版《最强喜事》</li>
+        <li class="textlli">化妆，还是伪装？港三区美呀版《最强喜事》</li>
+    </ul>
+</div>
+</body>
+</html>

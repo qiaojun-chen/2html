@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基础练习3</title>
+    <link rel="stylesheet" href="clear defult sytle.css">
+    <style>
+        ul{
+            margin: 30px auto;
+        }
+        li{
+            border: 1px solid black;
+            float: left;
+            margin-left:-1px ;/* 设置元素的margin值为边框值的相反数，就可以把重叠的部分边框隐藏起来（被覆盖）去除左边框重叠部分 */
+        }
+        li:hover{
+            border: 1px solid red;
+            border-bottom: none;
+            margin-left:-1px ;
+        }
+        p{
+            margin: 0 15px 0 15px;
+        }
+    </style>
+</head>
+<body>
+<ul class="clear">
+    <li><p>中华</p></li>
+    <li><p>人民</p></li>
+    <li><p>共和国</p></li>
+    <li><p>北京</p></li>
+    <li><p>欢迎你</p></li>
+
+</ul>
+</body>
+</html>
